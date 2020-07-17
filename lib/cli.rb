@@ -47,7 +47,12 @@ class CLI
     end  
     end 
   end 
-   
+  def countries_list  
+    Country.all.each do |names_hash|
+    puts "#{names_hash.name}"
+    end 
+  end 
+
   def space 
     puts ""
   end 
