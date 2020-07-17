@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+#3 lines of code
+# - shebang line: tells the the interpreter to use Ruby
+# - require your enviroment
+# - start your program
+
+#new_cli.new.start #start changing depending on the call method variable you use
+
+require_relative "../config/environment.rb"
+
+# new_cli_instance = CLI.new
+# new_cli_instance.start 
+CLI.new.start
+
+#CLI.start= is not a class method. becasue it is not calling on an instance of a class but the class itself. 
