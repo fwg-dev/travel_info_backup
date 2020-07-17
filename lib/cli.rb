@@ -1,6 +1,6 @@
 # primary job of the CLI class is to provide the user interface - ‘gets’ and ‘puts’
 class CLI 
- attr_reader :api, :countries
+ attr_reader :api
 
   def start
     @api = API.new
