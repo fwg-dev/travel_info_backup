@@ -1,6 +1,6 @@
 # primary job of the CLI class is to provide the user interface - ‘gets’ and ‘puts’
 class CLI 
- attr_reader :api, :country
+ attr_reader :api, :countries
 
   def start
     @api = API.new
@@ -19,17 +19,17 @@ class CLI
     user_input = gets.strip
  
     if user_input == "1"
-      countries = @api.get_info("ar")
-      return countries_list#for each country print country.name
+     @api.get_info("ar")
+     countries_list#for each country print country.name
     elsif user_input == "2"
-      countries = @api.get_info("en")
-      return countries_list
+       @api.get_info("en")
+      countries_list
     elsif user_input == "3"
-      countries = @api.get_info("fr")
-      return countries_list
+      @api.get_info("fr")
+    countries_list
     elsif user_input == "4"
-      countries = @api.get_info("es")
-       return countries_list
+     @api.get_info("es")
+     countries_list
     else 
   
     puts "Wrong input, please try again!".red
